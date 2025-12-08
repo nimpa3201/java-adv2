@@ -3,12 +3,11 @@ package io.text;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 
 import static io.text.TextConst.FILE_NAME;
 import static java.nio.charset.StandardCharsets.*;
 
-public class ReadWriterMainV3 {
+public class ReaderWriterMainV3 {
 
     public static void main(String[] args) throws IOException {
         String writeString = "ABC";
