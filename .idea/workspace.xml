@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809c001a-3316-4c02-8177-0df387a7b710" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="809c001a-3316-4c02-8177-0df387a7b710" name="Changes" comment="feat: 회원 관리 예제1 - 메모리">
+      <change afterPath="$PROJECT_DIR$/src/io/member/impl/FileMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/member-txt.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/charset/AvailableCharsetsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charset/AvailableCharsetsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/member/MemberConsoleMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/member/MemberConsoleMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/member/MemberRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,21 +35,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/gwongilnam/Desktop/java-adv2/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/gwongilnam/Desktop/java-adv2/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.text" />
+      <recent name="io.buffered" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,11 +67,105 @@
       <workItem from="1763349907663" duration="1217000" />
       <workItem from="1763361089426" duration="94000" />
       <workItem from="1763366296077" duration="496000" />
+      <workItem from="1764296333687" duration="1722000" />
+      <workItem from="1764818583994" duration="4291000" />
+      <workItem from="1765171634325" duration="1824000" />
+      <workItem from="1765175207999" duration="729000" />
+      <workItem from="1765182577830" duration="1865000" />
+      <workItem from="1765417462580" duration="1990000" />
+      <workItem from="1765439045805" duration="4339000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: 파일 입출력과 성능 최적화4 - Buffered 스트림 읽기">
+      <option name="closed" value="true" />
+      <created>1764219431898</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764219431898</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 파일 입출력과 성능 최적화5 - 한 번에 쓰기">
+      <option name="closed" value="true" />
+      <created>1764219908699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764219908699</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 문자 다루기1 - 시작">
+      <option name="closed" value="true" />
+      <created>1764298069923</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764298069924</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: 문자 다루기2 - 스트림을 문자로">
+      <option name="closed" value="true" />
+      <created>1764820227035</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764820227035</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: 문자 다루기3 - Reader,Writer">
+      <option name="closed" value="true" />
+      <created>1764824148510</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764824148510</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: 문자 다루기4 - BufferedReader">
+      <option name="closed" value="true" />
+      <created>1765173998352</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765173998352</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: 기타 스트림">
+      <option name="closed" value="true" />
+      <created>1765184411620</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765184411620</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: 회원 관리 예제1 - 메모리">
+      <option name="closed" value="true" />
+      <created>1765440171278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765440171278</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 파일 입출력과 성능 최적화4 - Buffered 스트림 읽기" />
+    <MESSAGE value="feat: 파일 입출력과 성능 최적화5 - 한 번에 쓰기" />
+    <MESSAGE value="feat: 문자 다루기1 - 시작" />
+    <MESSAGE value="feat: 문자 다루기2 - 스트림을 문자로" />
+    <MESSAGE value="feat: 문자 다루기3 - Reader,Writer" />
+    <MESSAGE value="feat: 문자 다루기4 - BufferedReader" />
+    <MESSAGE value="feat: 기타 스트림" />
+    <MESSAGE value="feat: 회원 관리 예제1 - 메모리" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 회원 관리 예제1 - 메모리" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

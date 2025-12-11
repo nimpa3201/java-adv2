@@ -1,15 +1,19 @@
 package io.member;
 
+import io.member.impl.FileMemberRepository;
 import io.member.impl.MemoryMemberRepository;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
 public class MemberConsoleMain {
 
-    private static final MemberRepository repository = new MemoryMemberRepository();
+    private static final MemberRepository repository = new FileMemberRepository();
 
-    public static void main(String[] args) {
+    // private static final MemberRepository repository = new MemoryMemberRepository();
+
+    public static void main(String[] args) throws IOException {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -42,7 +46,7 @@ public class MemberConsoleMain {
     }
 
 
-    private static void registerMember(Scanner scanner){
+    private static void registerMember(Scanner scanner) throws IOException {
         System.out.print("ID 입력: ");
         String id = scanner.nextLine();
 
