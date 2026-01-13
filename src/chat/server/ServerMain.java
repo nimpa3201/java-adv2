@@ -10,7 +10,8 @@ public class ServerMain {
         
         // CommandManager 점진적으로 변경 예정
         //CommendManager commandManager = new CommandManagerV1(sessionManager);
-        CommendManager commandManager = new CommandManagerV2(sessionManager);
+        //CommendManager commandManager = new CommandManagerV2(sessionManager);
+        CommendManager commandManager = new CommandManagerV3(sessionManager);
 
         Server server = new Server(PORT, commandManager, sessionManager);
         server.start();
